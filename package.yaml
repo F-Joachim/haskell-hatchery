@@ -1,0 +1,28 @@
+name:                haskell-hatchery
+version:             0.1.0.0
+github:              "F-Joachim/haskell-hatchery"
+license:             BSD3
+author:              Joachim Friedrich
+maintainer:          "49515773+F-Joachim@users.noreply.github.com"
+copyright:           "2026 Joachim Friedrich"
+
+description:         A Haskell project playing around with various concepts.
+language:            GHC2021
+
+dependencies:
+  - base >=4.7 && <5
+
+library:
+  source-dirs: src
+  dependencies:
+    - base
+    - containers
+    - bytestring
+    - text
+
+executables:
+  haskell-hatchery-exe:
+    main: Main.hs
+    source-dirs: app
+    dependencies:
+      - haskell-hatchery

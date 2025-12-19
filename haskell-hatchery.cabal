@@ -1,0 +1,45 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.39.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           haskell-hatchery
+version:        0.1.0.0
+description:    A Haskell project playing around with various concepts.
+homepage:       https://github.com/F-Joachim/haskell-hatchery#readme
+bug-reports:    https://github.com/F-Joachim/haskell-hatchery/issues
+author:         Joachim Friedrich
+maintainer:     49515773+F-Joachim@users.noreply.github.com
+copyright:      2026 Joachim Friedrich
+license:        BSD3
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/F-Joachim/haskell-hatchery
+
+library
+  exposed-modules:
+      PhantomTypes
+  other-modules:
+      Paths_haskell_hatchery
+  hs-source-dirs:
+      src
+  build-depends:
+      base
+    , bytestring
+    , containers
+    , text
+  default-language: GHC2021
+
+executable haskell-hatchery-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_haskell_hatchery
+  hs-source-dirs:
+      app
+  build-depends:
+      base >=4.7 && <5
+    , haskell-hatchery
+  default-language: GHC2021
