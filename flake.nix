@@ -26,7 +26,7 @@
                 cabal = {};
                 hlint = {};
                 haskell-language-server = {};
-                stack = {version = "3.7.1";};
+                stack = {version = "3.9.1";};
               };
 
               # Non-Haskell shell tools go here
